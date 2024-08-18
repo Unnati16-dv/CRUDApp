@@ -1,0 +1,22 @@
+.col-6-l{
+    width: 50%;
+    float: left;
+    text-align: center;
+    background-color: yellow;
+}
+
+.col-6-r{
+    width: 50%;
+    float: right;
+    text-align: center;
+    background-color: green;
+}
+
+.header{
+    width: 100%;
+    text-align: center;
+    padding-top: 30px;
+    background-color: rgb(189, 181, 181);
+    min-height: 100px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
