@@ -1,0 +1,18 @@
+.bor {
+    border: solid #04AA6D;
+    border-radius: 5px;
+    margin: 10px;
+    margin-left: 10%;
+    max-width: 80%;
+    float: center;
+}
+
+button {
+    background-color: #04AA6D;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px;
+    border: none;
+    cursor: pointer;
+    width: 20%
+}

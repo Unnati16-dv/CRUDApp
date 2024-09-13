@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { PaymentDetailService } from '../shared/payment-detail.service';
+import { PaymentDetailModel } from '../shared/payment-detail.model';
 
 @Component({
   selector: 'app-payment-details',
@@ -7,9 +8,21 @@ import { PaymentDetailService } from '../shared/payment-detail.service';
   styleUrl: './payment-details.component.css'
 })
 export class PaymentDetailsComponent implements OnInit{
-  constructor(public service: PaymentDetailService){}
+  paymentDetailList: PaymentDetailModel[] = [];
+
+  constructor(private http: PaymentDetailService){}
 
   ngOnInit(){
-    this.service.getList();
+    this.http.getList().subscribe({
+      next: (data: PaymentDetailModel[]) => {
+        this.paymentDetailList = data
+      },
+      error: (error) => {
+        console.log(error)
+      },
+      complete: () => {
+        console.log('Request Complete')
+      }
+    })
   }
 }

@@ -2,14 +2,12 @@
     width: 50%;
     float: left;
     text-align: center;
-    background-color: yellow;
 }
 
 .col-6-r{
     width: 50%;
     float: right;
     text-align: center;
-    background-color: green;
 }
 
 .header{

@@ -9,4 +9,7 @@
     <div>
         <h1>List of Payments</h1>
     </div>
+    <div *ngFor="let item of paymentDetailList">
+        <app-payment-detail-item [detailList]="item" />
+    </div>
 </div>

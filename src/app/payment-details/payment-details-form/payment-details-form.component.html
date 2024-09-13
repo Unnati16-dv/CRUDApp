@@ -1,1 +1,25 @@
-<h1>payment-details-form works!</h1>
+<form [formGroup]="paymentForm" (ngSubmit)="AddCard()">
+    <div class="container">
+        <div><h2>Add your Card details here -</h2></div>
+        <div class="left">
+            <label for="cardOwnerName"><b>Card Owner's Name: </b></label>
+            <input type="text" formControlName="cardOwnerName" placeholder="Name on card" name="cardOwnerName" required>
+        </div>
+
+        <div class="left">
+            <label for="cardNumber"><b>Card Number: </b></label>
+            <input type="text" formControlName="cardNumber" placeholder="16 digit card number" name="cardNumber" required>
+        </div>
+
+        <div class="left">
+            <label for="securityCode"><b>Security Code: </b></label>
+            <input type="password" formControlName="securityCode" placeholder="CVV" name="securityCode" required>
+        </div>
+
+        <div class="left">
+            <label for="expirationDate"><b>Card's Expiration Date: </b></label>
+            <input type="text" formControlName="expirationDate" placeholder="MM/YYYY" name="expirationDate" required>
+        </div>
+        <button type="submit">Add</button>
+    </div>
+</form>
