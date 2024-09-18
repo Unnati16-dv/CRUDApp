@@ -1,3 +1,11 @@
+#About this app:
+This is a basic Angular Application to start my learning journey of making 2 layered architecture. I have used Angular as Frontend and ASP.Net Core (Payment API) with Entity Framework as backend for processing the get, put, post and delete request from Payment App.
+In it, The home page is dividied into 2 parts, 1 is a form which takes some card details like Name of the Card Owner, Card Number, CVV and Expiration date of the card. The second is a list of cards which displays the name of the Card's Owner and Card number.
+Each item in the lsit had edit and delete button.
+The application sends get, put, post and delete methods to the ASP.Net core backend.
+
+
+
 # PaymentApp
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.0.
